@@ -1,282 +1,351 @@
-/* Custom styling for the Bootstrap website. 
-These styles do not ship with Bootstrap. 
-Some are overrides of existing Bootstrap styles, while others are new styles not existing in Bootstrap.
-In the starting CSS document, styles are based on custom classes not in Bootstrap.
-*/
+body {
+	background:#f4f4f4;
+}
+.container-fluid {
+    max-width:1440px;
+    overflow: hidden;
+}
+.maxWidth {
+    max-width:1440px;
+}
+.background {
+	background:#f4f4f4;
+	width: 1440px;
+	height: 75em;
+	display: block;
+	position: absolute;
+	top:0;
+	left:0;
+}
+.container-fluid {
+	background:#ffffff !important;
+}
+.container {
+	background:#ffffff !important;
+	width: 1400px;
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* Style for "logo" */
+.logo {
+	padding-left: 116px; 
+	padding-top: 30px;
+}
+/* Style for "SHELL PRIV" */
+.tagline {
+	color: #d42e12;
+	font-family: "Futura PT";
+	font-size: 1.5em;
+	font-weight: 700;
+	line-height: .6em;
+	text-transform: uppercase;
+	position: relative;
+	top: 50px;
+	text-align: right;
+}
+.background-retusche {
+    background: url('../images/background1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.retusche {height: 639px;margin-left:-15px;padding:0;}
+.bosom-none {
+	margin-right: 15px; // Removes the right gap
+	margin-left: 15px;  // Removes the left gap
+}
+.base-white {
+	/* Style for "base white" */
+	width: 585px;
+	height: 147px;
+	border-radius: 8px;
+	background-color: #ffffff;
+	margin-top: 49px;
+	margin-left: 115px;
+}
+h1.power-ohne {
+	/* Style for "Power ohne" */
+	color: #f18713;
+	font-family: "Roboto Condensed";
+	font-size: 50px;
+	font-weight: 400;
+	line-height: 50px;
+	margin: 0;
+	padding: 0;
+}
+.iphone {
+	margin:0; 
+	padding:0; 
+	position: absolute; 
+	left:-15px; 
+	top: 230px;
+}
+/* Style for "wohnzimmer" */
+.wohnzimmer {
+	width: 242px;
+    height: 137px;
+    position: absolute;
+    top: 62px;
+    left: 75px;
+}
+/* Style for "200% apple" */
+.apple {
+	width: 128px;
+	height: 40px;
+	margin:0; 
+	padding:0; 
+	position: absolute; 
+	left: 115px; 
+	top: 559px;
+}
+/* Style for "200% googl" */
+.googl {
+	width: 128px;
+	height: 40px;
+	margin:0; 
+	padding:0; 
+	position: absolute; 
+	left: 253px; 
+	top: 559px;
+}
+/* Style for "cam" */
+.cam {
+	width: 195px;
+	height: 287px;
+	margin:0; 
+	padding:0; 
+	position: absolute; 
+	left: 413px; 
+	top: 369px;
+	z-index: 10;
+}
+.circle {
+    width: 222px;
+    height: 222px;
+    background: #e20613;
+    border-radius: 50%;
+    position: absolute; 
+	left: 586px; 
+	top: 302px;
+}
+/* Style for "Strom inkl" */
+h2.strom-inkl {
+	color: #ffffff;
+	font-family: "Roboto Condensed";
+	font-weight: 700;
+	padding: 10px 15px;
+}
+ul {
+	display: block;
+    margin-left: -3.5em;
+    top: 1em;
+    margin-top: -30px;
+    position: relative;
+    list-style: none;
+}
+li {padding: 0px 0px;}
+.light{
+    -webkit-text-stroke: 5px #e20613;
+    color: white;
+    vertical-align:-7px;
+}
+.smartfrog {font-size:1em; color:white;font-family: "Roboto Condensed" !important;font-size: 18px;font-weight: 700; }
+.panel-default > .panel-heading {
+	  color: #333;
+	  background-color: #f7d117;
+	  border-color: #ddd;
+	  text-align: center;
+}
+h2.panel-title {
+    font-size: 30px;
+    color: #d42e12;
+	font-family: "Roboto Condensed";
+	font-weight: 700;
+	height: 56px;
+	line-height: 58px;
+}
+.panel-right {
+	width:413px;
+	position: absolute;
+	right:115px;
+	top:49px;
+	height:510px;
+}
+.gap-top {
+  margin-top: 28px; 
+}
+.gap-left {
+ margin-left: 14px;
+}
+.sich-light {
+	-webkit-text-stroke: 7px white;
+    color: #e20613;
+    vertical-align:-7px;
+}
+.sich {
+	font-size:2em !important; 
+	color: black; 
+	font-family: "Roboto Condensed" !important;
+	font-size: 18px;
+	font-weight: 400; 
+}
+ul.panel-list {
+	display: block;
+	width:30em;
+	margin-left: -1.8em;
+	margin-top: .2em;
+}
+em {
+  color: #d42e12;
+  font-style: normal;
+  font-weight: 700;
+}
+/* Style for "Vektor-Sma" */
+.shell {
+	text-align:right; 
+	margin:0; 
+	padding:.7em 0 .7em;
+}
+.shell-red {
+	color: #e20613 !important;
+}
+.shell-red-background {
+	background-color: #e20613 !important;
+	color: #ffffff;
+}
+/* Style for "Rechteck 2" */
+.rechteck2 {
+	margin-top: -1px;
+	height: 180px; 
+	background-color: #f7d117;
+}
+/* Style for form */
+h2 {
+	display:inline-block;
+}
+.form-group button {
+	padding: 10em 0;
+	margin: 0;
+	text-align: center;
+}
+form {
+	padding: 6em 0;
+	width: 750px;
+	margin: 0 auto;
+	background-color: #f7d117;
+}
+.form-none {
+	margin-right: -15px; // Removes the right gap
+	margin-left: -15px;  // Removes the left gap
+}
+.footer-links {
+	padding-top:2em;
+	padding-bottom:2em;
+	padding-right: 19em;
+	padding-left: 19em;
+	margin-right: auto;
+	margin-left: auto;
+	line-height: 30px;
+	color: #646464;
+	text-align: center;
+	font-size: 1em;
+}
+.siteinfo {
+	/* Style for "Shell Priv" */
+	text-align: center;
+	padding: 3em 0;
+	border-bottom: 1px solid #ddd;
+	color: #414141;
+	font-family: "Roboto Condensed";
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 18px;
+}
+.siteinfo a {
+	text-decoration: none;
+	color: #999;
+	font-size: 0.8em;
+}
+.siteinfo a:hover {
+	color: #602F8D;
+	text-decoration: underline;
+}
 
-/* below styles take effect between 1400px and 1440px */
+/*=====================================================
+=            Bootstrap 2.3.2 Media Queries            =
+=====================================================*/
+/*@media only screen and (max-width : 1200px) {
 
-@media (min-width: 1400px) and (max-width: 1440px){
-				body {
-					background:#ffffff; 
-				}
-				.container-fluid {
-				    max-width:1440px;
-				    overflow: hidden;
-				}
-				.maxWidth {
-				    max-width:1440px;
-				}
-				.background {
-					background:#f4f4f4;
-					width: 1440px;
-					height: 75em;
-					display: block;
-					position: absolute;
-					top:0;
-					left:0;
-				}
-				.container {
-					background:#ffffff !important;
-					width: 1400px;
-					padding-right: 15px;
-				    padding-left: 15px;
-				    margin-right: auto;
-				    margin-left: auto;
-				}
-				/* Style for "logo" */
-				.logo {
-					padding-left: 116px; 
-					padding-top: 30px;
-				}
-				/* Style for "SHELL PRIV" */
-				.tagline {
-					color: #d42e12;
-					font-family: "Futura PT";
-					font-size: 1.5em;
-					font-weight: 700;
-					line-height: .6em;
-					text-transform: uppercase;
-					position: relative;
-					top: 50px;
-					text-align: right;
-				}
-				.background-retusche {
-					background: url('../images/background1.jpg') no-repeat;
-					width: 1400px;
-				    height: 639px;
-				    margin: 0 0 0 -15px;
-				    padding: 0;
-				}
-				.retusche {height: 639px;margin-left:-15px;padding:0;}
-				.bosom-none {
-					margin-right: 15px; // Removes the right gap
-					margin-left: 15px;  // Removes the left gap
-				}
-				.base-white {
-					/* Style for "base white" */
-					width: 585px;
-					height: 147px;
-					border-radius: 8px;
-					background-color: #ffffff;
-					margin-top: 49px;
-					margin-left: 115px;
-				}
-				h1.power-ohne {
-					/* Style for "Power ohne" */
-					color: #f18713;
-					font-family: "Roboto Condensed";
-					font-size: 50px;
-					font-weight: 400;
-					line-height: 50px;
-					margin: 0;
-					padding: 0;
-				}
-				.iphone {
-					margin:0; 
-					padding:0; 
-					position: absolute; 
-					left:-15px; 
-					top: 230px;
-				}
-				/* Style for "wohnzimmer" */
-				.wohnzimmer {
-					width: 242px;
-				    height: 137px;
-				    position: absolute;
-				    top: 62px;
-				    left: 75px;
-				}
-				/* Style for "200% apple" */
-				.apple {
-					width: 128px;
-					height: 40px;
-					margin:0; 
-					padding:0; 
-					position: absolute; 
-					left: 115px; 
-					top: 559px;
-				}
-				/* Style for "200% googl" */
-				.googl {
-					width: 128px;
-					height: 40px;
-					margin:0; 
-					padding:0; 
-					position: absolute; 
-					left: 253px; 
-					top: 559px;
-				}
-				/* Style for "cam" */
-				.cam {
-					width: 195px;
-					height: 287px;
-					margin:0; 
-					padding:0; 
-					position: absolute; 
-					left: 413px; 
-					top: 369px;
-					z-index: 10;
-				}
-				.circle {
-				    width: 222px;
-				    height: 222px;
-				    background: #e20613;
-				    border-radius: 50%;
-				    position: absolute; 
-					left: 586px; 
-					top: 302px;
-				}
-				/* Style for "Strom inkl" */
-				h2.strom-inkl {
-					color: #ffffff;
-					font-family: "Roboto Condensed";
-					font-weight: 700;
-					padding: 10px 15px;
-				}
-				ul {
-					display: block;
-				    margin-left: -3.5em;
-				    top: 1em;
-				    margin-top: -30px;
-				    position: relative;
-				    list-style: none;
-				}
-				li {padding: 0px 0px;}
-				.light{
-				    -webkit-text-stroke: 5px #e20613;
-				    color: white;
-				    vertical-align:-7px;
-				}
-				.smartfrog {font-size:1em; color:white;font-family: "Roboto Condensed" !important;font-size: 18px;font-weight: 700; }
-				.panel-default > .panel-heading {
-					  color: #333;
-					  background-color: #f7d117;
-					  border-color: #ddd;
-					  text-align: center;
-				}
-				h2.panel-title {
-				    font-size: 30px;
-				    color: #d42e12;
-					font-family: "Roboto Condensed";
-					font-weight: 700;
-					height: 56px;
-					line-height: 58px;
-				}
-				.panel-right {
-					width:413px;
-					position: absolute;
-					right:115px;
-					top:49px;
-					height:510px;
-				}
-				.gap-top {
-				  margin-top: 28px; 
-				}
-				.gap-left {
-				 margin-left: 14px;
-				}
-				.sich-light {
-					-webkit-text-stroke: 7px white;
-				    color: #e20613;
-				    vertical-align:-7px;
-				}
-				.sich {
-					font-size:2em !important; 
-					color: black; 
-					font-family: "Roboto Condensed" !important;
-					font-size: 18px;
-					font-weight: 400; 
-				}
-				ul.panel-list {
-					display: block;
-					width:30em;
-					margin-left: -1.8em;
-					margin-top: .2em;
-				}
-				em {
-				  color: #d42e12;
-				  font-style: normal;
-				  font-weight: 700;
-				}
-				/* Style for "Vektor-Sma" */
-				.shell {
-					text-align:right; 
-					margin:0; 
-					padding:.7em 0 .7em;
-				}
-				.shell-red {
-					color: #e20613 !important;
-				}
-				.shell-red-background {
-					background-color: #e20613 !important;
-					color: #ffffff;
-				}
-				/* Style for "Rechteck 2" */
-				.rechteck2 {
-					margin-top: -1px;
-					height: 180px; 
-					background-color: #f7d117;
-				}
-				/* Style for form */
-				h2 {
-					display:inline-block;
-				}
-				.form-group button {
-					padding: 10em 0;
-					margin: 0;
-				}
-				form {
-					padding: 6em 0;
-					width: 750px;
-					margin: 0 auto;
-					background-color: #f7d117;
-				}
-				.form-none {
-					margin-right: -15px; // Removes the right gap
-					margin-left: -15px;  // Removes the left gap
-				}
-			    .footer-links {
-			    	padding-top:2em;
-			    	padding-bottom:2em;
-			    	padding-right: 19em;
-			    	padding-left: 19em;
-			    	margin-right: auto;
-			    	margin-left: auto;
-			    	line-height: 30px;
-			    	color: #646464;
-			    	text-align: center;
-			    	font-size: 1em;
-			    }
-			    .siteinfo {
-			    	/* Style for "Shell Priv" */
-			    	text-align: center;
-			    	padding: 3em 0;
-			    	border-bottom: 1px solid #ddd;
-			    	color: #414141;
-			    	font-family: "Roboto Condensed";
-			    	font-size: 13px;
-			    	font-weight: 400;
-			    	line-height: 18px;
-			    }
-			    .siteinfo a {
-			    	text-decoration: none;
-			    	color: #999;
-			    	font-size: 0.8em;
-			    }
-			    .siteinfo a:hover {
-			    	color: #602F8D;
-			    	text-decoration: underline;
-			    }
+}*/
 
+@media only screen and (max-width : 979px) {
+	/* Style for "logo" */
+	.logo {
+		padding-left: 10px; 
+		padding-top: 30px;
+		margin-left: 20px; 
+	}
+	/* Style for "SHELL PRIV" */
+	.tagline {
+		text-align: right;
+		line-height: 0px;
+		top: 55px;
+	}
+	.base-white {
+	/* Style for "base white" */
+		margin-left: 10px; 
+	}
+	.shell {
+		text-align: right; 
+		margin:0; 
+		padding:.7em 0 .7em;
+		padding-left: 395px;
+	}
+}
+
+@media only screen and (max-width : 767px) {
+	.logo {
+		float:left;
+		margin:0;
+		padding-left: 10px; 
+		padding-top: 30px;
+	}
+	.shell {
+		float:left;
+		margin:0;
+		padding:.7em 0 .7em;
+	}
+	.apple {
+		width: 128px;
+		height: 40px;
+		margin:0; 
+		padding:0; 
+		position: absolute; 
+    	left: 395px;
+    	top: 340px;
+	}
+	.googl {
+		left: 550px;
+    	top: 340px;
+	}
+
+	.rechteck2 {
+    	height: 240px;
+	}
+
+}
+
+/*@media only screen and (max-width : 480px) {
+	.background-retusche {
+	    background-image:none
+	}
+}*/
+
+/*@media only screen and (max-width : 320px) {
+	.background-retusche {
+	    background-image:none
+	}*/
 }

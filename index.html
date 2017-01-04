@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>20160629_Shell_Startseite_Desktop_01</title>
+    <title>Bootstrap Exercise</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -11,18 +11,17 @@
 </head>
 
 <body>
-	<div class="container-fluid maxWidth">
-		<div class="background">
-			<div class="container">
+	
+			<div class="container-fluid">
 				<header class="row">
-					<div class="col-sm-4 logo"><img src="images/logo.png" alt="Smartfrog logo"></div>
-		  			<div class="col-sm-6 tagline">SHELL PRIVATENERGIE</div>
-		  			<div class="col-sm-2 shell"><img src="images/vektor-smartobjekt.png" alt="Shell logo"></div>
+					<div class="col-md-4 logo col-sm-4 col-xs-6"><img src="images/logo.png" alt="Smartfrog logo"></div>
+		  			<div class="col-md-6 tagline col-sm-4 hidden-xs">SHELL PRIVATENERGIE</div>
+		  			<div class="col-md-2 shell col-sm-4 col-xs-6"><img src="images/vektor-smartobjekt.png" alt="Shell logo"></div>
 				</header>
 
 			    <div class="row background-retusche retusche">
-			    	<div class="col-sm-12">
-			    	<div class="col-sm-7">
+			    	<div class="col-md-12 col-sm-12">
+			    	<div class="col-md-7 col-sm-7">
 			    		<div class="panel panel-default base-white">
 						  <div class="panel-body">
 						    <h1 class="power-ohne">Power ohne Ende und mehr Sicherheit für Ihr Zuhause!</h1>
@@ -38,10 +37,10 @@
 						<div class="img-responsive googl">
 							<img src="images/googl.png" alt="Google logo">
 						</div>
-						<div class="img-responsive cam">
+						<div class="img-responsive cam hidden-xs">
 							<img src="images/cam.png" alt="smartfrog camera">
 						</div>
-						<div class="circle-wrapper">
+						<div class="circle-wrapper hidden-xs">
 						   <div class="circle text-center">
 						      <div>
 						      	<h2 class="strom-inkl">Strom inkl.</h2>
@@ -54,8 +53,8 @@
 						   </div>
 						</div>
 			    	</div>
-			    	<div class="col-sm-5">
-			    		 <div class="panel panel-default panel-right">
+			    	<div class="col-md-5 col-sm-5">
+			    		 <div class="panel panel-default panel-right hidden-sm hidden-xs">
 						    <div class="panel-heading"><h2 class="panel-title">Strom & Sicheres Zuhause 24</h2></div>
 						    <div class="panel-body">
 						    	<img src="images/panel-right.png" alt="plug + packaging" class="img-responsive centre-block gap-top gap-left">
@@ -70,53 +69,52 @@
 			    </div>
 
 			    <div class="row">
-					<div class="colum-md-6 rechteck2">
-					<h2 class="text-center col-sm-12 shell-red">Berechnen Sie Ihren individuellen Tarif:</h2>
-			    	<form class="form-inline">
+					<div class="colum-md-12 colum-sm-12 colum-xs-12 rechteck2">
+						<h2 class="text-center col-sm-12 col-xs-12 shell-red">Berechnen Sie Ihren individuellen Tarif:</h2>
+					    	<form class="form-inline">
 
-					  <div class="form-group col-sm-4">
-					    <!-- <label for="postalcode" class="col-sm-4">Ihre Postleitzahl</label> -->
-					    <input type="text" class="form-control" id="postcode" placeholder="Ihre Postleitzahl">
-					  </div>
+							  <div class="form-group col-md-4 col-sm-4 col-xs-12">
+							    <!-- <label for="postalcode" class="col-sm-4">Ihre Postleitzahl</label> -->
+							    <input type="text" class="form-control" id="postcode" placeholder="Ihre Postleitzahl">
+							  </div>
 
-					  <div class="form-group col-sm-4">
-					    <!-- <label for="consumption" class="col-sm-4">Ihr Jahresverbrauch</label> -->
-					    <select class="form-control" id="gender1" name="consumption">
-					    	<option selected>Ihr Jahresverbrauch</option>
-					    	<option value="opt1">Option 1</option>
-					    	<option value="opt2">Option 2</option>
-					    	<option value="opt3">Option 3</option>
-					    </select>
-					  </div>
+							  <div class="form-group col-md-4 col-sm-4 col-xs-12">
+							    <!-- <label for="consumption" class="col-sm-4">Ihr Jahresverbrauch</label> -->
+							    <select class="form-control" id="gender1" name="consumption">
+							    	<option selected>Ihr Jahresverbrauch</option>
+							    	<option value="opt1">Option 1</option>
+							    	<option value="opt2">Option 2</option>
+							    	<option value="opt3">Option 3</option>
+							    </select>
+							  </div>
 
-					  <div class="col-sm-4">
-					  	<button type="submit" class="btn shell-red-background">Jetzt Tarif berechnen</button>
-					  </div>
+							  <div class="col-md-4 col-sm-4 col-xs-12">
+							  	<button type="submit" class="btn shell-red-background center-block">Jetzt Tarif berechnen</button>
+							  </div>
 
-					</form>
+							</form>
 					</div>
 			    </div>
 				
-				<footer class="row siteinfo">
+				<div class="row siteinfo col-sm-12 col-md-12 col-xs-12">
 					<p>Shell PrivatEnergie (Strom- und Gasprodukte für Privathaushalte) ist ein Angebot der First Utility GmbH. First Utility GmbH nutzt Shell Marken unter Lizenzvereinbarung.</p>
-				</footer>
+				</div>
 
-				<div class="col-sm-12">
+				<div class="col-md-12">
 				  <div class="row footer-links">
 				      <div class="row">
-				        <div class="col-sm-2">Über uns</div>
-				        <div class="col-sm-2">Kontakt</div>
-				        <div class="col-sm-2">Energiemix</div>
-				        <div class="col-sm-2">AGB</div>
-				        <div class="col-sm-2">Datenschutz</div>
-				        <div class="col-sm-2">Impressum</div>
+						        <div class="col-md-2 col-sm-4 col-xs-6">Über uns</div>
+						        <div class="col-md-2 col-sm-4 col-xs-6">Kontakt</div>
+						        <div class="col-md-2 col-sm-4 col-xs-6">Energiemix</div>	   
+						        <div class="col-md-2 col-sm-4 col-xs-6">AGB</div>
+						        <div class="col-md-2 col-sm-4 col-xs-6">Datenschutz</div>
+						        <div class="col-md-2 col-sm-4 col-xs-6">Impressum</div>					
 				      </div>
 				    </div>
 				</div>
 
 			</div><!-- end container -->
-		</div><!-- end background -->
-	</div><!-- end container-fluid -->
+	
     
 <!-- javascript -->
     <script src="js/jquery.min.js"></script>
